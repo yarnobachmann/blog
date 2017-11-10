@@ -1,0 +1,85 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  background-color: #D3D3D3;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+main .middenBlok {
+  max-width: 600px;
+  text-align: left;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #000;
+  margin: 2em auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+main .middenBlok p {
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+main .wrapper {
+  background-color: yellow;
+  border-radius: 5px;
+  margin-bottom: 150px;
+}
+
+main .img-responsive {
+  border-radius: 5px;
+  object-fit: contain;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+main.nav-is-visible {
+  -webkit-transform: translateY(80px);
+  -moz-transform: translateY(80px);
+  -ms-transform: translateY(80px);
+  -o-transform: translateY(80px);
+  transform: translateY(80px);
+}
+@media only screen and (min-width: 768px) {
+  main.nav-is-visible {
+    -webkit-transform: translateY(170px);
+    -moz-transform: translateY(170px);
+    -ms-transform: translateY(170px);
+    -o-transform: translateY(170px);
+    transform: translateY(170px);
+  }
+  main h1 {
+    font-size: 3.6rem;
+    margin: 4em auto;
+  }
+}
+
+.iconbar {
+  height: 30px;
+}
